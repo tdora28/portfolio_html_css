@@ -1,0 +1,182 @@
+/* VARIABLES */
+:root {
+  --clr-bg: #faf0e6;
+  --clr-main: #fdc1df;
+  --clr-accent: #d8571f;
+  --clr-main-dark: #521131;
+  --clr-font: #333;
+  --clr-font-light: #999;
+  --clr-bg-transparent: rgba(255, 255, 255, 0.5);
+}
+
+/* BASE STYLES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-bg);
+  font-family: "Poppins", sans-serif;
+  color: var(--clr-font);
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+img {
+  max-width: 400px;
+}
+
+/* LANDING */
+
+.landing-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  background-image: url("https://images.pexels.com/photos/3147624/pexels-photo-3147624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+/* HEADER: LOGO and NAV */
+
+header {
+  padding: 1rem 2rem;
+  background: var(--clr-bg-transparent);
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--clr-accent);
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  list-style-type: none;
+}
+.nav a {
+  color: var(--clr-main-dark);
+  text-decoration: none;
+}
+
+/* HERO BANNER */
+
+.hero-banner {
+  align-self: center;
+  font-size: 3rem;
+  font-weight: normal;
+  color: var(--clr-bg);
+  text-align: center;
+  text-shadow: 0 0 5px var(--clr-main-dark);
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+section {
+  padding: 3rem;
+}
+
+section:nth-child(even) {
+  background: var(--clr-main);
+}
+
+section > h2 {
+  margin-bottom: 2rem;
+}
+
+section:nth-child(odd) > img {
+  float: left;
+  padding-right: 2rem;
+}
+section:nth-child(even) > img {
+  float: right;
+  padding-left: 2rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+  padding: 3rem;
+  background-color: var(--clr-font);
+  color: var(--clr-font-light);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+  margin-bottom: 2rem;
+}
+
+.contact__form {
+  width: 100%;
+  max-width: 350px;
+}
+
+.contact__group {
+  display: grid;
+  grid-template-columns: 100px auto;
+  margin-bottom: 1rem;
+}
+
+.contact__label {
+  padding-right: 2rem;
+  color: var(--clr-font-light);
+  text-align: right;
+}
+
+.contact__input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact__group textarea {
+  height: 150px;
+}
+
+.contact__btn {
+  display: block;
+  width: 40%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--clr-main);
+  cursor: pointer;
+}
+.contact__btn:hover {
+  background-color: var(--clr-main-dark);
+  color: var(--clr-main);
+}
+.contact__btn:active {
+  transform: scale(0.9);
+}
+
+footer small {
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Dóra Tokai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER: LOGO and NAV -->
+    <div class="landing-wrapper">
+      <header>
+        <div class="logo">Dóra Tokai</div>
+
+        <nav>
+          <ul class="nav">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li>
+              <a
+                href="https://www.bc.fi/"
+                rel="noopener noreferrer"
+                target="_blank"
+                >More about BCH</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <h1 class="hero-banner">Welcome to My Portfolio</h1>
+    </div>
+
+    <!-- MAIN -->
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+        <img
+          src="https://images.pexels.com/photos/3130269/pexels-photo-3130269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="" />
+        <p>
+          A collection of my recent projects from front- to back-end
+          development. Not sure what you're looking for? See my favourite pieces
+          below.
+        </p>
+      </section>
+
+      <section id="about-me">
+        <h2>About me</h2>
+        <img
+          src="https://images.pexels.com/photos/3826676/pexels-photo-3826676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="" />
+        <p>
+          I studied linguistics at the university, and later decided to go after
+          a new challenge. I started learning web development in 2022. At first
+          I was just curious but after a while I realized that building websites
+          is a really good fit for me. I like creating new things (that's why I
+          love drawing too) and I'm a very organized person. Coding also makes
+          it possible for me to become a librarian - my childhood dream.
+          Interacting with APIs is like handling books in a library. Contact me
+          if you'd like to build something awesome together!
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <img
+          src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="" />
+
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Figma</li>
+          <li>MS Office</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="contact">
+        <h2 class="contact__title">Get in touch</h2>
+        <form class="contact__form" action="">
+          <div class="contact__group">
+            <label for="username" class="contact__label">Name</label>
+            <input
+              type="text"
+              class="contact__input"
+              id="username"
+              name="username"
+              placeholder="Name" />
+          </div>
+
+          <div class="contact__group">
+            <label for="email" class="contact__label">Email</label>
+            <input
+              type="email"
+              class="contact__input"
+              id="email"
+              name="email"
+              placeholder="Email" />
+          </div>
+
+          <div class="contact__group">
+            <label for="message" class="contact__label">Message</label>
+            <textarea
+              class="contact__input"
+              name="message"
+              id="message"
+              placeholder="Message"></textarea>
+          </div>
+
+          <input type="submit" class="contact__btn" value="Send" />
+        </form>
+      </div>
+
+      <small>Copyright &copy; Dóra Tokai 2023</small>
+    </footer>
+  </body>
+</html>
