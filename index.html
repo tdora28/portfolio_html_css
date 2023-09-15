@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web development portfolio of Dóra Tokai." />
     <title>Portfolio - Dóra Tokai</title>
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet" />
+    <!-- CSS STYLESHEET -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -40,8 +45,10 @@
     <!-- MAIN -->
     <main>
       <section id="projects">
-        <h2>Projects</h2>
+        <h2 class="section__title">Projects</h2>
+
         <img
+          class="section__img"
           src="https://images.pexels.com/photos/3130269/pexels-photo-3130269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="" />
         <p>
@@ -49,28 +56,83 @@
           development. Not sure what you're looking for? See my favourite pieces
           below.
         </p>
+
+        <div class="cards clear-float">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
+              alt=""
+              class="card__img" />
+            <div class="card__body">
+              <h3 class="card__title">Project 1</h3>
+              <p class="card__desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Blanditiis natus facere dolorem voluptate eligendi dignissimos
+                nihil explicabo laborum doloribus exercitationem?
+              </p>
+              <a class="card__link" href="#">Read more &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg"
+              alt=""
+              class="card__img" />
+            <div class="card__body">
+              <h3 class="card__title">Project 2</h3>
+              <p class="card__desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Blanditiis natus dignissimos nihil explicabo laborum doloribus
+                exercitationem?
+              </p>
+              <a class="card__link" href="#">Read more &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg"
+              alt=""
+              class="card__img" />
+            <div class="card__body">
+              <h3 class="card__title">Project 3</h3>
+              <p class="card__desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Blanditiis natus facere dolorem voluptate eligendi dignissimos
+                nihil explicabo laborum doloribus exercitationem?
+              </p>
+              <a class="card__link" href="#">Read more &rarr;</a>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="about-me">
-        <h2>About me</h2>
-        <img
-          src="https://images.pexels.com/photos/3826676/pexels-photo-3826676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="" />
-        <p>
-          I studied linguistics at the university, and later decided to go after
-          a new challenge. I started learning web development in 2022. At first
-          I was just curious but after a while I realized that building websites
-          is a really good fit for me. I like creating new things (that's why I
-          love drawing too) and I'm a very organized person. Coding also makes
-          it possible for me to become a librarian - my childhood dream.
-          Interacting with APIs is like handling books in a library. Contact me
-          if you'd like to build something awesome together!
-        </p>
-      </section>
+      <div class="section-color">
+        <section id="about-me">
+          <h2 class="section__title">About me</h2>
+          <img
+            class="section__img"
+            src="https://images.pexels.com/photos/3826676/pexels-photo-3826676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="" />
+          <p>
+            I studied linguistics at the university, and later decided to go
+            after a new challenge. I started learning web development in 2022.
+            At first I was just curious but after a while I realized that
+            building websites is a really good fit for me. I like creating new
+            things (that's why I love drawing too) and I'm a very organized
+            person. Coding also makes it possible for me to become a librarian -
+            my childhood dream. Interacting with APIs is like handling books in
+            a library. Contact me if you'd like to build something awesome
+            together!
+          </p>
+        </section>
+      </div>
 
       <section id="skills">
-        <h2>Skills</h2>
+        <h2 class="section__title">Skills</h2>
         <img
+          class="section__img"
           src="https://images.pexels.com/photos/574070/pexels-photo-574070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="" />
 
@@ -85,7 +147,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>
+    <footer class="clear-float">
       <div class="contact">
         <h2 class="contact__title">Get in touch</h2>
         <form class="contact__form" action="">

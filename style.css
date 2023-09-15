@@ -87,31 +87,80 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  align-items: center;
 }
 
 section {
+  width: 100%;
+  max-width: 1000px;
   padding: 3rem;
 }
 
-section:nth-child(even) {
-  background: var(--clr-main);
-}
-
-section > h2 {
+.section__title {
   margin-bottom: 2rem;
 }
 
-section:nth-child(odd) > img {
+section:nth-child(odd) .section__img {
   float: left;
   padding-right: 2rem;
 }
-section:nth-child(even) > img {
+section:nth-child(even) .section__img {
   float: right;
   padding-left: 2rem;
 }
 
 p {
   line-height: 1.5;
+}
+
+.clear-float {
+  clear: both;
+}
+
+.section__img {
+  margin-bottom: 1rem;
+}
+
+/* CARDS */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 3rem;
+  border-top: 6px double var(--clr-font-light);
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.card__img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card__body {
+  position: relative;
+  padding: 1rem 1rem 3rem;
+}
+
+.card__title {
+  margin-bottom: 1rem;
+}
+
+.card__link {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 /* FOOTER */
@@ -179,4 +228,11 @@ footer {
 footer small {
   display: block;
   text-align: center;
+}
+
+@media screen and (min-width: 400px) {
+  .cards {
+    flex-flow: row wrap;
+    align-items: stretch;
+  }
 }
