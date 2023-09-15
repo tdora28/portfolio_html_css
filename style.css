@@ -42,20 +42,19 @@ img {
   max-width: 400px;
 }
 
-/* LANDING */
-
-.landing-wrapper {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  min-height: 100vh;
-  background-image: url("https://images.pexels.com/photos/3147624/pexels-photo-3147624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-}
-
 /* HEADER: LOGO and NAV */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 1rem 2rem;
   background: var(--clr-bg-transparent);
+  transition: background 0.2s ease-out;
+}
+header:hover {
+  background: var(--clr-bg);
 }
 
 .logo {
@@ -75,10 +74,17 @@ header {
   text-decoration: none;
 }
 
-/* HERO BANNER */
+/* LANDING */
+
+.landing-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("https://images.pexels.com/photos/3147624/pexels-photo-3147624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
 
 .hero-banner {
-  align-self: center;
   font-size: 3rem;
   font-weight: normal;
   color: var(--clr-bg);
