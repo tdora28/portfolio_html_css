@@ -51,12 +51,8 @@ header {
   z-index: 200;
   width: 100%;
   padding: 1rem 2rem;
-  background: var(--clr-bg);
-  opacity: 0.7;
-  transition: opacity 0.2s ease-out;
-}
-header:hover {
-  opacity: 1;
+  background: var(--clr-bg-transparent);
+  transition: background 0.3s ease-out;
 }
 
 .logo {
