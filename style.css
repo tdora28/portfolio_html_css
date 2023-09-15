@@ -152,6 +152,7 @@ section {
   max-width: 300px;
   background: #fff;
   border-radius: var(--bdr-radius);
+  box-shadow: 2px 2px 0 var(--clr-main);
 }
 
 .card__img {
@@ -195,6 +196,7 @@ section {
   padding: 1rem;
   border-radius: var(--bdr-radius);
   background-color: #fff;
+  box-shadow: 2px 2px 0 var(--clr-main);
 }
 
 .skill-box i {
@@ -212,19 +214,19 @@ section {
   background: var(--clr-accent);
 }
 
-.skill-box--html5 i {
+.skill-box:nth-child(1) i {
   color: #f75403;
 }
-.skill-box--css3 i {
+.skill-box:nth-child(2) i {
   color: #244bdd;
 }
-.skill-box--js i {
+.skill-box:nth-child(3) i {
   color: #e8d44d;
 }
-.skill-box--react i {
+.skill-box:nth-child(4) i {
   color: #5ed2f3;
 }
-.skill-box--figma i {
+.skill-box:nth-child(5) i {
   color: #000;
 }
 
