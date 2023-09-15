@@ -1,5 +1,7 @@
 const header = document.querySelector("#header");
+const backToTopBtn = document.querySelector("#back-to-top");
 
+// Header background-color changes on scroll and mouse events
 let timer = null;
 window.addEventListener("scroll", () => {
   if (timer !== null) {
@@ -17,4 +19,9 @@ header.addEventListener("mouseover", () => {
 
 header.addEventListener("mouseout", () => {
   header.style.background = "var(--clr-bg-transparent)";
+});
+
+// Back to top functionality
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo(0, 0);
 });

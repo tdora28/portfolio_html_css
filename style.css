@@ -42,6 +42,26 @@ img {
   max-width: 400px;
 }
 
+/* BACK TO TOP */
+#back-to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--clr-accent);
+  color: var(--clr-bg);
+  cursor: pointer;
+}
+#back-to-top:hover {
+  background: var(--clr-main-dark);
+}
+
 /* HEADER: LOGO and NAV */
 
 header {
