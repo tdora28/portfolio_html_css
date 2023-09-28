@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web development portfolio of Dóra Tokai." />
+    <title>Portfolio - Dóra Tokai</title>
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/27fd0f4b20.js" crossorigin="anonymous"></script>
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER: LOGO and NAV -->
+    <button class="mobile-btn visible" id="openMobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+    <header id="header">
+      <button class="mobile-btn" id="closeMobileMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="logo">Dóra Tokai</div>
+
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#about-me">About me</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li>
+            <a href="https://www.bc.fi/" rel="noopener noreferrer" target="_blank">More about BCH</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- GALLERY -->
+    <h1 class="gallery-title">Gallery</h1>
+
+    <section class="gallery">
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+      <div class="gallery-img"></div>
+    </section>
+
+    <footer>
+      <div class="contact">
+        <h2 class="contact__title">Get in touch</h2>
+        <form class="contact__form" action="">
+          <div class="contact__group">
+            <label for="username" class="contact__label">Name</label>
+            <input type="text" class="contact__input" id="username" name="username" placeholder="Name" />
+          </div>
+
+          <div class="contact__group">
+            <label for="email" class="contact__label">Email</label>
+            <input type="email" class="contact__input" id="email" name="email" placeholder="Email" />
+          </div>
+
+          <div class="contact__group">
+            <label for="message" class="contact__label">Message</label>
+            <textarea class="contact__input" name="message" id="message" placeholder="Message"></textarea>
+          </div>
+
+          <input type="submit" class="contact__btn" value="Send" />
+        </form>
+      </div>
+
+      <small>Copyright &copy; Dóra Tokai 2023</small>
+
+      <script src="app.js"></script>
+    </footer>
+  </body>
+</html>

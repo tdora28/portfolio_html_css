@@ -4,11 +4,13 @@ const openMenuBtn = document.querySelector('#openMobileMenuBtn');
 const closeMenuBtn = document.querySelector('#closeMobileMenuBtn');
 const navLinks = document.querySelectorAll('.nav a');
 
+const MOBILE_UPPER_SIZE = 601;
+
 // Header background-color changes on scroll and mouse events
 let timer = null;
 window.addEventListener('scroll', () => {
   // Cancel for small screens
-  if (window.innerWidth < 501) {
+  if (window.innerWidth < MOBILE_UPPER_SIZE) {
     return;
   }
   // Make background solid for a short time on scroll
@@ -23,7 +25,7 @@ window.addEventListener('scroll', () => {
 
 header.addEventListener('mouseover', () => {
   // Cancel for small screens
-  if (window.innerWidth < 501) {
+  if (window.innerWidth < MOBILE_UPPER_SIZE) {
     return;
   }
   header.style.background = 'var(--clr-bg)';
@@ -31,7 +33,7 @@ header.addEventListener('mouseover', () => {
 
 header.addEventListener('mouseout', () => {
   // Cancel for small screens
-  if (window.innerWidth < 501) {
+  if (window.innerWidth < MOBILE_UPPER_SIZE) {
     return;
   }
   header.style.background = 'var(--clr-bg-transparent)';
