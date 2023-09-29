@@ -25,7 +25,7 @@ html {
 
 body {
   background-color: var(--clr-bg);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--clr-font);
 }
 
@@ -128,10 +128,10 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('https://images.pexels.com/photos/3147624/pexels-photo-3147624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-image: url("https://images.pexels.com/photos/3147624/pexels-photo-3147624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 }
 .landing-wrapper::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -344,30 +344,30 @@ footer small {
 
 /* Gallery */
 .gallery-title {
-  margin: 10rem 1rem 4rem;
+  margin: 2rem 1rem 3rem;
   font-size: 4rem;
   color: var(--clr-main-dark);
   text-align: center;
-  text-shadow: 1px 1px 0 var(--clr-main);
+  text-shadow: 2px 2px 0 var(--clr-main);
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
-    'one one two three three three'
-    'one one two three three three'
-    'one one two four four five'
-    'one one two four four nine'
-    'six seven seven four four nine'
-    'six seven seven eight eight nine';
+    "one one two three three three"
+    "one one two three three three"
+    "one one two four four five"
+    "one one two four four nine"
+    "six seven seven four four nine"
+    "six seven seven eight eight nine";
   gap: 1rem;
   width: 90vw;
   max-width: 800px;
   height: 90vw;
   max-height: 800px;
   margin: 0 auto 4rem;
-  border: 5px solid var(--clr-main);
   background: var(--clr-main-dark);
 }
 .gallery-img {
@@ -375,42 +375,49 @@ footer small {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border: 1px solid var(--clr-bg);
 }
 .gallery-img:nth-child(1) {
   grid-area: one;
-  background-image: url('https://images.pexels.com/photos/6590699/pexels-photo-6590699.jpeg');
+  background-image: url("https://images.pexels.com/photos/6590699/pexels-photo-6590699.jpeg");
 }
 .gallery-img:nth-child(2) {
   grid-area: two;
-  background-image: url('https://images.pexels.com/photos/12879014/pexels-photo-12879014.jpeg');
+  background-image: url("https://images.pexels.com/photos/12879014/pexels-photo-12879014.jpeg");
 }
 .gallery-img:nth-child(3) {
   grid-area: three;
-  background-image: url('https://images.pexels.com/photos/13284758/pexels-photo-13284758.jpeg');
+  background-image: url("https://images.pexels.com/photos/13284758/pexels-photo-13284758.jpeg");
 }
 .gallery-img:nth-child(4) {
   grid-area: four;
-  background-image: url('https://images.pexels.com/photos/16776159/pexels-photo-16776159/free-photo-of-water-around-rocks-on-shore.jpeg');
+  background-image: url("https://images.pexels.com/photos/16776159/pexels-photo-16776159/free-photo-of-water-around-rocks-on-shore.jpeg");
 }
 .gallery-img:nth-child(5) {
   grid-area: five;
-  background-image: url('https://images.pexels.com/photos/17038848/pexels-photo-17038848/free-photo-of-river-flowing-in-green-valley.jpeg');
+  background-image: url("https://images.pexels.com/photos/17038848/pexels-photo-17038848/free-photo-of-river-flowing-in-green-valley.jpeg");
 }
 .gallery-img:nth-child(6) {
   grid-area: six;
-  background-image: url('https://images.pexels.com/photos/16948299/pexels-photo-16948299/free-photo-of-close-up-of-pink-flowers.jpeg');
+  background-image: url("https://images.pexels.com/photos/16948299/pexels-photo-16948299/free-photo-of-close-up-of-pink-flowers.jpeg");
 }
 .gallery-img:nth-child(7) {
   grid-area: seven;
-  background-image: url('https://images.pexels.com/photos/17676464/pexels-photo-17676464/free-photo-of-a-house-on-a-hill-between-trees-in-the-countryside.jpeg');
+  background-image: url("https://images.pexels.com/photos/17676464/pexels-photo-17676464/free-photo-of-a-house-on-a-hill-between-trees-in-the-countryside.jpeg");
 }
 .gallery-img:nth-child(8) {
   grid-area: eight;
-  background-image: url('https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg');
+  background-image: url("https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg");
 }
 .gallery-img:nth-child(9) {
   grid-area: nine;
-  background-image: url('https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url("https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.back-home {
+  display: block;
+  margin: 2rem;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 400px) {
@@ -451,7 +458,7 @@ footer small {
     display: none;
   }
 
-  .gallery-title {
-    margin-top: 4rem;
+  section {
+    scroll-margin-top: 0;
   }
 }
