@@ -20,11 +20,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a href="index.html" class="back-home"><i class="fa-solid fa-chevron-left"></i> Home</a>
+    <!-- BACK TO TOP -->
+    <div id="back-to-top"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <!-- HEADER: LOGO and NAV -->
+    <button class="mobile-btn visible" id="openMobileMenuBtn"><i class="fa-solid fa-bars"></i></button>
+    <header id="header">
+      <button class="mobile-btn" id="closeMobileMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="logo">Dóra Tokai</div>
+
+      <nav>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#about-me">About me</a></li>
+          <li><a href="/#skills">Skills</a></li>
+          <li>
+            <a href="https://www.bc.fi/" rel="noopener noreferrer" target="_blank">More about BCH</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <!-- GALLERY -->
-    <h1 class="gallery-title">Gallery</h1>
-
     <section class="gallery">
       <div class="gallery-img"></div>
       <div class="gallery-img"></div>
@@ -37,6 +55,7 @@
       <div class="gallery-img"></div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
       <div class="contact">
         <h2 class="contact__title">Get in touch</h2>
