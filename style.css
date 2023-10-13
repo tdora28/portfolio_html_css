@@ -69,6 +69,10 @@ header {
   padding: 1rem 2rem;
   background: var(--clr-bg-transparent);
   transition: background 0.3s ease-out;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header.background {
   background: var(--clr-bg);
@@ -103,9 +107,11 @@ header.background {
 }
 
 .logo {
-  font-size: 2rem;
-  color: var(--clr-accent);
-  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+.logo img {
+  max-width: 100%;
 }
 
 .nav {
@@ -413,7 +419,7 @@ footer small {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   header {
     right: 0;
     left: auto;
@@ -427,8 +433,7 @@ footer small {
   }
 
   .logo {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    margin: 0 auto 2rem;
   }
 
   .nav {
