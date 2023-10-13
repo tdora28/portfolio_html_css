@@ -25,7 +25,7 @@ html {
 
 body {
   background-color: var(--clr-bg);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--clr-font);
 }
 
@@ -69,6 +69,9 @@ header {
   padding: 1rem 2rem;
   background: var(--clr-bg-transparent);
   transition: background 0.3s ease-out;
+}
+header.background {
+  background: var(--clr-bg);
 }
 
 .mobile-btn {
@@ -124,10 +127,10 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('images/decor/landing.jpeg');
+  background-image: url("images/decor/landing.jpeg");
 }
 .landing-wrapper::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -346,12 +349,12 @@ footer small {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
-    'one one two three three three'
-    'one one two three three three'
-    'one one two four four five'
-    'one one two four four nine'
-    'six seven seven four four nine'
-    'six seven seven eight eight nine';
+    "one one two three three three"
+    "one one two three three three"
+    "one one two four four five"
+    "one one two four four nine"
+    "six seven seven four four nine"
+    "six seven seven eight eight nine";
   gap: 1rem;
   width: 90vw;
   max-width: 1000px;
@@ -417,7 +420,7 @@ footer small {
     display: none;
     width: 80%;
     padding: 1rem 1rem 3rem;
-    background: white;
+    background: var(--clr-bg);
   }
   header.visible {
     display: block;
