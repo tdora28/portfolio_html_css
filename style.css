@@ -133,7 +133,10 @@ header.background {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("images/decor/landing.jpeg");
+  background-image: url("images/decor/landing.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .landing-wrapper::before {
   content: "";
