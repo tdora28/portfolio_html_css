@@ -423,12 +423,6 @@ footer small {
   margin: 0 auto 4rem;
 }
 
-.back-home {
-  display: block;
-  margin: 2rem;
-  text-decoration: none;
-}
-
 @media screen and (min-width: 400px) {
   .cards {
     flex-flow: row wrap;
