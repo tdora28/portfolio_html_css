@@ -25,7 +25,7 @@ html {
 
 body {
   background-color: var(--clr-bg);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--clr-font);
 }
 
@@ -133,13 +133,13 @@ header.background {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("images/decor/landing.jpg");
+  background-image: url('images/decor/landing.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .landing-wrapper::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -151,11 +151,13 @@ header.background {
 
 .hero-banner {
   z-index: 100;
+  padding: 0 1rem;
   font-size: 3rem;
   font-weight: normal;
   color: var(--clr-bg);
   text-align: center;
   text-shadow: 0 0 5px var(--clr-main-dark);
+  line-height: 1.2;
 }
 
 /* MAIN */
@@ -231,6 +233,7 @@ section {
 /* ABOUT */
 #about-me .section__img {
   float: left;
+  width: 100%;
   max-width: 400px;
   padding-right: 1rem;
 }
@@ -308,7 +311,7 @@ footer {
 
 .contact__group {
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: 100px 1fr;
   margin-bottom: 1rem;
 }
 
@@ -351,19 +354,19 @@ footer small {
   text-align: center;
 }
 
-/* Gallery */
+/* GALLERY */
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas:
-    "one one two three three three"
-    "one one two three three three"
-    "one one two four four five"
-    "one one two four four nine"
-    "six seven seven four four nine"
-    "six seven seven eight eight nine";
+    'one one two three three three'
+    'one one two three three three'
+    'one one two four four five'
+    'one one two four four nine'
+    'six seven seven four four nine'
+    'six seven seven eight eight nine';
   gap: 1rem;
   width: 90vw;
   max-width: 1000px;
@@ -454,6 +457,16 @@ footer small {
 
   section {
     scroll-margin-top: 0;
+  }
+
+  .contact__group {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+  }
+
+  .contact__label {
+    text-align: left;
   }
 
   .gallery {
