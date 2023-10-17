@@ -372,7 +372,7 @@ footer small {
   max-width: 1000px;
   height: 90vw;
   max-height: 800px;
-  margin: 10rem auto 4rem;
+  margin: 10rem auto 1rem;
   padding: 0;
 }
 
@@ -410,6 +410,13 @@ footer small {
 }
 .gallery-img:nth-child(9) {
   grid-area: nine;
+}
+
+.gallery-resource {
+  display: block;
+  width: 90vw;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
 }
 
 .back-home {
@@ -470,6 +477,6 @@ footer small {
   }
 
   .gallery {
-    margin: 5rem auto 4rem;
+    margin: 5rem auto 1rem;
   }
 }
