@@ -124,6 +124,9 @@ header.background {
   color: var(--clr-main-dark);
   text-decoration: none;
 }
+.nav a:hover {
+  text-decoration: underline;
+}
 
 /* LANDING */
 
@@ -228,6 +231,9 @@ section {
 .card__link {
   margin-top: auto;
   align-self: flex-end;
+}
+.card__link:hover {
+  color: var(--clr-accent);
 }
 
 /* ABOUT */
